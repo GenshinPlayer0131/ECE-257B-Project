@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+    <sensor_configs>
+        <sensor name="stub6">
+            <epcs>
+                <!-- <epc>ADDAFB63AC1F3841EC880467</epc>
+                <epc>ADDA1B63AC1F3841EC880467</epc> -->
+                <!-- <epc>DDDDFB63AC1F3841EC880401</epc>
+                <epc>DDDDFB63AC1F3841EC880402</epc> -->
+                <epc>E2801160600002196CF142BE</epc>
+                <epc>E2801160600002196CF162BB</epc>
+            </epcs>
+            <classification />
+            <window>0.5</window>
+            <y_range>60</y_range>
+        </sensor>
+        <sensor name="stub16">
+            <epcs>
+                <!-- <epc>ADDAFB63AC1F3841EC880467</epc>
+                <epc>ADDA1B63AC1F3841EC880467</epc> -->
+                <!-- <epc>DDDDFB63AC1F3841EC880401</epc>
+                <epc>DDDDFB63AC1F3841EC880402</epc> -->
+                <epc>001100000000000000250091</epc>
+                <epc>001100000000000000250092</epc>
+            </epcs>
+            <classification />
+            <window>0.5</window>
+            <y_range>60</y_range>
+        </sensor>
+        <sensor name="stub26">
+            <epcs>
+                <!-- <epc>ADDAFB63AC1F3841EC880467</epc>
+                <epc>ADDA1B63AC1F3841EC880467</epc> -->
+                <!-- <epc>DDDDFB63AC1F3841EC880401</epc>
+                <epc>DDDDFB63AC1F3841EC880402</epc> -->
+                <epc>001100000000000000002501</epc>
+                <epc>001100000000000000002502</epc>
+            </epcs>
+            <classification />
+            <window>0.5</window>
+            <y_range>60</y_range>
+        </sensor>
+        <sensor name="soil">
+            <epcs>
+                <epc>E280116060000219A056390E</epc>
+                <epc>E2801160600002196CF16513</epc>
+            </epcs>
+            <classification>
+                <saturated>15</saturated>
+                <moist>60</moist>
+                <dry>150</dry>
+            </classification>
+            <window>10</window>
+            <y_range>100</y_range>
+        </sensor>
+        <sensor name="force">
+            <epcs>
+                <epc>E2801160600002196CF0D337</epc>
+                <epc>E280116060000219A056795A</epc>
+                <!-- <epc>FFFFFB63AC1F3841EC880A01</epc>
+                <epc>FFFFFB63AC1F3841EC880A02</epc> -->
+            </epcs>
+            <classification>
+                <light>30</light>
+                <heavy>90</heavy>
+            </classification>
+            <window>2</window>
+            <y_range>120</y_range>
+        </sensor>
+        <sensor name="photo">
+            <epcs>
+                <epc>8888FB63AC1F3681EC880A01</epc>
+                <epc>8888FB63AC1F3681EC880A02</epc>
+                <!-- <epc>8887FB63AC1F3841EC880B01</epc>
+                <epc>8887FB63AC1F3841EC880B02</epc> -->
+                <!-- <epc>8888FB63AC1F3841EC880C01</epc>
+                <epc>8888FB63AC1F3841EC880C02</epc> -->
+            </epcs>
+            <classification>
+                <bright>30</bright>
+                <medium>45</medium>
+                <dark>60</dark>
+            </classification>
+            <window>4</window>
+            <y_range>45</y_range>
+        </sensor>
+        <sensor name="temperature">
+            <epcs>
+                <epc>E280116060000219A0565968</epc>
+                <epc>E2801160600002196CF14AE4</epc>
+            </epcs>
+            <classification>
+                <more>30</more>
+                <less>60</less>
+            </classification>
+            <window>0.1</window>
+            <y_range>120</y_range>
+        </sensor>
+    </sensor_configs>
+
+    <sensor_def>stub6</sensor_def>
+    <store_data>true</store_data>
+
+    <is_dtw>true</is_dtw>
+
+    <project>zensetag</project>
+    <read_rate>800</read_rate>
+
+    <max_tag_history>200000</max_tag_history>
+
+    <impinj>
+        <host_ip>169.254.34.190</host_ip>
+        <host_port>5084</host_port>
+    </impinj>
+
+    <repo_name>zensetag</repo_name>
+
+    <antenna_reader_configs>
+        <reader>
+            <antenna>0</antenna>
+            <rf_mode>0</rf_mode>
+            <session>0</session>
+            <tagPopulation>2</tagPopulation>
+        </reader>
+        <report>
+            <channel>true</channel>
+            <rssi>true</rssi>
+            <timestamp>true</timestamp>
+            <count>false</count>
+            <phase>true</phase>
+        </report>
+    </antenna_reader_configs>
+</configurations>
